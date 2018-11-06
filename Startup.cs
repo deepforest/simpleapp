@@ -64,8 +64,8 @@ namespace SimpleApp
             app.UseSwaggerWithApiExplorer(config =>
             {
                 config.GeneratorSettings.OperationProcessors.TryGet<ApiVersionProcessor>().IncludedVersions = new[] { "1.0" };
-                config.GeneratorSettings.Title = "RapX Web Client APIs";
-                config.GeneratorSettings.Description = "Exposes RESTfull apis for RapX web client";
+                config.GeneratorSettings.Title = "Web APIs";
+                config.GeneratorSettings.Description = "Exposes RESTfull apis for web client";
                 config.SwaggerRoute = swaggerRoute;
             });
 
